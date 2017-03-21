@@ -1,0 +1,39 @@
+.breadcrumb
+	border-bottom 1px solid #ececec
+	margin-bottom 0px
+	border-top 1px solid #ececec
+	background #eee
+	padding 0px 0px 7px 7px
+	display block
+	height 35px
+	a
+		color #adadad
+	a:before
+		content '/'
+		font-size 12px
+		padding 7px
+		color #cacaca
+	a:first-of-type:before
+		content ''
+		padding 3px
+
+	.title-page
+		padding 8px 20px 8px 8px
+		color #90a4b5
+		font-weight 400
+		border-radius 2px
+		font-size 21px
+		font-family $main-font
+		i 
+			font-size 12px
+			top -2px
+			
+		small
+			font-size 18px
+			font-style italic
+			font-weight 300
+			&:before
+				content '/'
+			&:empty:before
+				content ''
+				display none

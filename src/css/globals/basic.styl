@@ -1,0 +1,81 @@
+body
+	margin auto
+	background #eee
+	color $main-font-color
+	
+*
+	outline-color rgba(154,154,154,0.1)
+
+	
+.main
+	background #fff
+	position relative
+	height auto
+	min-height calc(100vh - 95px)
+	width calc(100vw - 65px)
+	top 60px
+	left 30px
+	margin 15px auto 45px auto
+	bottom 80px
+	float left
+	padding-bottom 20px
+	@media screen and (max-width: 1024px)
+		width 100vw
+		top 50px
+		left 0px
+		
+	.title-page
+		padding: 5px 20px 5px 15px;
+		width: 100%;
+		background: #f9f9f9;
+		color #bfbfbf
+		font-weight 400
+		border-radius 2px
+		font-size 14px
+		font-family $main-font
+		margin-bottom 0px
+		i 
+			font-size 12px
+			top -2px
+			
+		small
+			font-size 18px
+			font-style italic
+			font-weight 300
+			&:before
+				content '/'
+			&:empty:before
+				content ''
+				display none
+	
+[data-menu-expanded='true']
+	.main
+		background #fff
+		position relative
+		height auto
+		min-height calc(100vh - 185px)
+		margin 70px auto 45px auto
+		
+		@media screen and (max-width: 1024px)
+			margin 15px auto 45px auto
+
+.sub-header
+	padding-bottom 10px
+	border-bottom 1px solid #eee
+	
+.content-panel
+	padding 20px 25px
+
+//ORIENTAÇÃO
+
+.group
+	.row
+		margin 5px 0
+.float
+	float left
+.float-inverse
+	float right
+.margin-bottom
+	margin-bottom 20px
+.margin-top
+	margin-top 20px

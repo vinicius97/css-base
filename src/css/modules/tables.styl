@@ -1,0 +1,147 @@
+.ui-datatable
+.ui-treetable
+	border none
+	color $main-font-color
+	table
+		margin-bottom 0px
+		border 1px solid #ddd
+		thead
+			border none
+			tr
+				background #ffffff
+				color #b5b5b5
+				border-bottom 2px solid #dddddd
+					
+				[class*=actions]
+				[class*=reorder]
+					background rgb(31, 151, 211)
+					font-size 0
+					position relative
+					
+				[class*=actions]	
+					&:before
+						content ''
+						background-image url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0xOS40MyAxMi45OGMuMDQtLjMyLjA3LS42NC4wNy0uOThzLS4wMy0uNjYtLjA3LS45OGwyLjExLTEuNjVjLjE5LS4xNS4yNC0uNDIuMTItLjY0bC0yLTMuNDZjLS4xMi0uMjItLjM5LS4zLS42MS0uMjJsLTIuNDkgMWMtLjUyLS40LTEuMDgtLjczLTEuNjktLjk4bC0uMzgtMi42NUMxNC40NiAyLjE4IDE0LjI1IDIgMTQgMmgtNGMtLjI1IDAtLjQ2LjE4LS40OS40MmwtLjM4IDIuNjVjLS42MS4yNS0xLjE3LjU5LTEuNjkuOThsLTIuNDktMWMtLjIzLS4wOS0uNDkgMC0uNjEuMjJsLTIgMy40NmMtLjEzLjIyLS4wNy40OS4xMi42NGwyLjExIDEuNjVjLS4wNC4zMi0uMDcuNjUtLjA3Ljk4cy4wMy42Ni4wNy45OGwtMi4xMSAxLjY1Yy0uMTkuMTUtLjI0LjQyLS4xMi42NGwyIDMuNDZjLjEyLjIyLjM5LjMuNjEuMjJsMi40OS0xYy41Mi40IDEuMDguNzMgMS42OS45OGwuMzggMi42NWMuMDMuMjQuMjQuNDIuNDkuNDJoNGMuMjUgMCAuNDYtLjE4LjQ5LS40MmwuMzgtMi42NWMuNjEtLjI1IDEuMTctLjU5IDEuNjktLjk4bDIuNDkgMWMuMjMuMDkuNDkgMCAuNjEtLjIybDItMy40NmMuMTItLjIyLjA3LS40OS0uMTItLjY0bC0yLjExLTEuNjV6TTEyIDE1LjVjLTEuOTMgMC0zLjUtMS41Ny0zLjUtMy41czEuNTctMy41IDMuNS0zLjUgMy41IDEuNTcgMy41IDMuNS0xLjU3IDMuNS0zLjUgMy41eiIvPgo8L3N2Zz4=')
+						position absolute
+						margin auto
+						background-repeat no-repeat
+						width 30px
+						background-size 20px
+						background-position center
+						left 0
+						right 0
+						top 0
+						bottom 0
+						margin 0 auto	
+						
+				[class*=reorder]
+					&:before
+						content ''
+						background-image url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0zIDE4aDZ2LTJIM3Yyek0zIDZ2MmgxOFY2SDN6bTAgN2gxMnYtMkgzdjJ6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==')
+						position absolute
+						margin auto
+						background-repeat no-repeat
+						width 30px
+						background-size 20px
+						background-position center
+						left 0
+						right 0
+						top 0
+						bottom 0
+						margin 0 auto
+				th
+					border none
+					border-right 2px solid $thead-border-color
+					font-weight bold
+					padding 10px
+					vertical-align middle
+					font-size 12px
+					
+				th:last-of-type
+					border-right none
+								
+		[class*=actions]
+		[class*=reorder]
+			text-align center
+				
+		.reorder
+			&-1
+				width 40px !important
+			&-2
+				width 65px !important
+			&-3
+				width 90px !important
+			&-4
+				width 115px !important
+									
+		.actions
+			&-1
+				width 40px !important
+			&-2
+				width 65px !important
+			&-3
+				width 90px !important
+			&-4
+				width 115px !important
+
+					
+				th:last-of-type
+					border-right none
+		tbody
+			td
+				border-color inherit
+				border none
+				border-right 1px solid #e6e6e6
+				color #8c8c8c
+				font-size 12px
+				label
+					font-weight normal
+			
+			td:last-of-type
+				border-right none
+				
+			tr:nth-child(even)
+			    background #ffffff
+				border 1px solid #eee
+				border-left none
+				border-right none
+			
+			td:nth-child(odd)
+				background rgba(255, 255, 255, 0.30)
+		
+		tfoot
+			tr
+				background #f7f7f7
+				color #337ab7
+				td
+					border none
+					border-right 2px solid #cccccc
+					padding 8px
+					vertical-align top
+					color $main-color
+					
+				td:last-of-type
+					border-right none
+
+	.ui-paginator
+		padding 10px
+		background #fff
+		border 1px solid #e6e6e6
+		border-top 0px
+
+		
+		.ui-paginator-current 
+			float left
+			font-weight bold 
+			font-size 12px
+			position absolute
+			left 10px
+			
+@media screen and (max-width: 1024px)
+	.ui-datatable-reflow
+		.ui-datatable-data 
+			td
+				font-size 11px
+				.ui-column-title
+					font-weight bold
+	

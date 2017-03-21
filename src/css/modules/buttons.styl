@@ -1,0 +1,140 @@
+.group-buttons
+	margin-left 0px
+	display block
+	width auto
+	padding 0px 20px
+	margin-bottom 0px
+	button
+		margin-top 10px
+		margin-bottom 10px
+
+.group-action-buttons
+	width 100%
+	padding 10px 20px
+	margin 10px 0
+	border 1px solid #eee
+	box-sizing content-box
+	
+base-min-button(bgColor, fontColor, borderColor)
+	background bgColor
+	color fontColor
+	border 1px solid borderColor !important
+	box-shadow none
+
+	.ui-button-icon-left
+		background transparent
+		
+	&:hover
+		background borderColor
+
+base-button(bgColor, fontColor, borderColor)
+	background bgColor
+	color fontColor
+	border-radius 45px
+	padding 7px 8px
+	margin-right auto 2px
+	border none
+	box-shadow none
+	text-shadow none
+	border 1px solid bgColor !important
+
+	transitionAll(150ms)
+	
+	.ui-button-icon-left
+		background transparent
+		
+	&:hover
+	&:active
+	&:focus
+		transitionAll(150ms)
+		background borderColor
+		text-shadow none
+		color fontColor
+		border none
+		
+	@media screen and (max-width: 768px)   
+		width 100%
+	    text-align center
+	    justify-content center
+	    margin-top 5px
+	    margin-bottom 5px
+	    			
+.btn-new
+	base-button(#86d093, #ffffff, #71ce79)
+	
+.btn-back
+	base-button(#57d2bb, #ffffff, #00af6e)
+	
+.btn-save
+	base-button(#74bbe6, #ffffff, #1897c7)
+
+.btn-search
+	base-button(#68d0d0, #ffffff, #6badad)
+	
+.btn-add
+	base-button(#68d0d0, #ffffff, #6badad)
+	
+.btn-edit
+	base-button(#d0c086, #ffffff, #cab360)
+	
+.btn-import
+	base-button(#68d0d0, #ffffff, #6badad)
+
+.btn-export
+	base-button(#8d77bf, #ffffff, #52319e)
+
+.btn-check
+	base-button(#68d0d0, #ffffff, #6badad)
+
+.btn-login
+	base-button($main-color, #ffffff, $third-color)
+    margin-top 5px
+    margin-bottom 5px
+    padding 5px 20px
+    font-size 20px
+   
+.btn-big
+	base-button(#86d093, #ffffff, #00af1f)
+	width 100%
+	padding 10px 20px
+	font-size 20px
+
+.btn-esqueci-senha
+	color #bbbbbb
+	border 1px solid #bbbbbb
+	padding 9px
+	border-radius 20px
+
+.btn-next
+	base-button(#77d27e, #ffffff, #55a75c)
+	
+.btn-yes
+	base-button(#77d27e, #ffffff, #55a75c)
+
+.btn-close
+	base-button(#ce6161, #ffffff, #8c4444)
+
+.btn-act
+	padding 3px
+	height 22px
+	background transparent
+	color #82afd0
+	text-shadow none
+	margin 0 0 0 0
+	
+	.ui-button-icon-left
+		background transparent
+		
+	&:hover
+		color #5bace8
+
+.fake-button-label
+	margin-top 17px
+	
+.tool-buttons		
+	padding 10px 10px
+	margin-bottom 15px
+	&--right
+		text-align right
+	&--left
+		text-align left
